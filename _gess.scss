@@ -1,0 +1,34 @@
+@mixin row($selector, $width-childs, $is-inside-other-row){
+  #{$selector}{
+    @if(not $is-inside-other-row){
+      width: 100%;
+    }
+    margin: 0;
+    padding: 0;
+  }
+  #{$selector} > * {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+  }
+  @if(type_of($width-childs)=='number'){
+    #{$selector} > * { width: $width-childs; }
+  }
+  @else{
+    @if(type_of($width-childs)=='list'){
+      $length: length($width-childs);
+      $i: 1;
+      @each $width in $width-childs{
+        #{$selector}:nth-child(#{$i}){
+          width: $width;
+        }
+        $i: $i + 1;
+      }
+    }
+    @else{
+      @each $child, $width in $width-childs{
+        #{$selector} > #{$child}{ width: $width; }
+      }
+    }
+  }
+}
