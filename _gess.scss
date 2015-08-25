@@ -19,7 +19,7 @@
       $length: length($width-childs);
       $i: 1;
       @each $width in $width-childs{
-        #{$selector}:nth-child(#{$i}){
+        #{$selector} > *:nth-child(#{$i}){
           width: $width;
         }
         $i: $i + 1;
