@@ -8,7 +8,10 @@
   "description": "Grid Extremely Simple for Sass.",
   "main": "_gess.scss",
   "keywords": [
-    "sass"
+    "sass",
+    "scss",
+    "gess",
+    "grid"
   ],
   "license": "MIT",
   "ignore": [
