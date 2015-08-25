@@ -1,0 +1,21 @@
+{
+  "name": "gess",
+  "version": "0.1.1",
+  "homepage": "https://github.com/graciano/gess",
+  "authors": [
+    "Matheus Graciano <graciano.dev@gmail.com>"
+  ],
+  "description": "Grid Extremely Simple for Sass.",
+  "main": "_gess.scss",
+  "keywords": [
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
