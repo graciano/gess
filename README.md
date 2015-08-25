@@ -4,6 +4,11 @@ Grid Extremely Simple for Sass. That's it.
 #### A warning
 We have a little bug :(
 
+## Install
+
+ - With [Bower](http://bower.io/ "Font-end dependency manager"): `$ bower install graciano/gess`
+ - Or just copy/paste the `_gess.scss` file in any folder of your project.
+
 ## Usage
 
 Include the row mixin with these arguments:
