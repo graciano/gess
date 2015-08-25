@@ -11,7 +11,8 @@
     "sass",
     "scss",
     "gess",
-    "grid"
+    "grid",
+    "graciano"
   ],
   "license": "MIT",
   "ignore": [
