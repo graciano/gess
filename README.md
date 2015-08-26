@@ -43,6 +43,5 @@ MIT license in the license file.
 ## To do
 
  - Solve the 49% bug
- - Export to some cool dependency manager
  - Make a demo here
  - I don't think there is much more to do, since it is an **Extremely Simple** tool and I intend to keep it that way.

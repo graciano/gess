@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial; }
+
+li {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  border-radius: 50%; }
+
+h1 {
+  font-size: 6em; }
+
+header > h1, header > h2 {
+  text-shadow: 0 2px 2px #727272; }
+
+h1 {
+  text-align: center; }
+
+h2 {
+  text-align: center; }
+
+h3 {
+  text-align: center; }
+
+header {
+  text-align: center;
+  background-color: #E91E63;
+  color: #fff;
+  padding: 3em; }
+  header h2 {
+    padding-bottom: 1em;
+    font-style: italic; }
+
+/*code{
+	white-space: pre;
+	word-break: normal;
+	word-wrap: normal;
+	font-size: small;
+}*/
+.row-preview {
+  /*background-color: #E91E63;*/
+  color: #212121; }
+
+hr {
+  margin: 2em; }
+
+.tutorial {
+  padding: 2em;
+  box-sizing: border-box;
+  background-color: #B6B6B6;
+  color: #fff;
+  font-size: 20px; }
+  .tutorial code {
+    font-size: 16px;
+    color: #212121;
+    white-space: pre-wrap;
+    -moz-white-space: pre-wrap; }
+  .tutorial .comment {
+    font-size: 16px;
+    color: #388E3C;
+    white-space: pre; }
+
+.cage {
+  text-align: center; }
+
+.row-preview {
+  margin: 0;
+  padding: 0; }
+
+.row-preview > * {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top; }
+
+.row-preview > .tutorial {
+  width: 59%; }
+
+.row-preview > .cage {
+  width: 40%; }
+
+.cage {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.cage > * {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top; }
+
+.cage > *:nth-child(1) {
+  width: 80%; }
+
+.cage > *:nth-child(2) {
+  width: 75%; }
+
+.cage > *:nth-child(3) {
+  width: 30%; }
+
+.cage > *:nth-child(4) {
+  width: 30%; }
+
+.cage > *:nth-child(5) {
+  width: 30%; }
+
+.cage > *:nth-child(6) {
+  width: 80%; }
+
+.cage > * {
+  padding-top: 1em;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=preview.css.map */
