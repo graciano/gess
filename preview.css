@@ -10,6 +10,9 @@ img {
   max-width: 100%;
   border-radius: 50%; }
 
+a {
+  color: #212121; }
+
 h1 {
   font-size: 5em; }
 
@@ -38,7 +41,9 @@ header {
   color: #212121; }
 
 hr {
-  margin: 2em; }
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%; }
 
 .tutorial .comment, .tutorial code {
   font-size: 16px;
@@ -64,6 +69,9 @@ hr {
   color: #fff; }
   .cage h2 {
     font-size: 2em; }
+
+.some-info {
+  padding-top: 1em; }
 
 .cage {
   width: 100%;

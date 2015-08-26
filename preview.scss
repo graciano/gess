@@ -13,6 +13,9 @@ img{
 	max-width: 100%;
 	border-radius: 50%;
 }
+a{
+	color: #212121;
+}
 
 h1{
 	font-size: 5em;
@@ -44,7 +47,9 @@ header{
 }
 
 hr{
-	margin: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 100%;
 }
 
 %code-commons{
@@ -78,6 +83,9 @@ hr{
 	text-align: center;
 	background-color: #2196F3;
 	color: #fff;
+}
+.some-info{
+	padding-top: 1em;
 }
 
 @include row('.cage', (80%, 80%, 20%, 20%, 20%, 40%, 40%), false);
