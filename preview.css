@@ -11,7 +11,7 @@ img {
   border-radius: 50%; }
 
 h1 {
-  font-size: 6em; }
+  font-size: 5em; }
 
 header > h1, header > h2 {
   text-shadow: 0 2px 2px #727272; }
@@ -29,57 +29,41 @@ header {
   text-align: center;
   background-color: #E91E63;
   color: #fff;
-  padding: 3em; }
+  padding: 1em; }
   header h2 {
     padding-bottom: 1em;
     font-style: italic; }
 
-/*code{
-	white-space: pre;
-	word-break: normal;
-	word-wrap: normal;
-	font-size: small;
-}*/
 .row-preview {
-  /*background-color: #E91E63;*/
   color: #212121; }
 
 hr {
   margin: 2em; }
 
+.tutorial .comment, .tutorial code {
+  font-size: 16px;
+  white-space: pre;
+  -moz-white-space: pre-wrap; }
+
 .tutorial {
-  padding: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 5em;
   box-sizing: border-box;
   background-color: #B6B6B6;
   color: #fff;
   font-size: 20px; }
-  .tutorial code {
-    font-size: 16px;
-    color: #212121;
-    white-space: pre-wrap;
-    -moz-white-space: pre-wrap; }
   .tutorial .comment {
-    font-size: 16px;
-    color: #388E3C;
-    white-space: pre; }
+    color: #388E3C; }
+  .tutorial code {
+    color: #212121; }
 
 .cage {
-  text-align: center; }
-
-.row-preview {
-  margin: 0;
-  padding: 0; }
-
-.row-preview > * {
-  display: inline-block;
-  margin: 0;
-  vertical-align: top; }
-
-.row-preview > .tutorial {
-  width: 59%; }
-
-.row-preview > .cage {
-  width: 40%; }
+  text-align: center;
+  background-color: #2196F3;
+  color: #fff; }
+  .cage h2 {
+    font-size: 2em; }
 
 .cage {
   width: 100%;
@@ -95,21 +79,46 @@ hr {
   width: 80%; }
 
 .cage > *:nth-child(2) {
-  width: 75%; }
-
-.cage > *:nth-child(3) {
-  width: 30%; }
-
-.cage > *:nth-child(4) {
-  width: 30%; }
-
-.cage > *:nth-child(5) {
-  width: 30%; }
-
-.cage > *:nth-child(6) {
   width: 80%; }
 
-.cage > * {
+.cage > *:nth-child(3) {
+  width: 20%; }
+
+.cage > *:nth-child(4) {
+  width: 20%; }
+
+.cage > *:nth-child(5) {
+  width: 20%; }
+
+.cage > *:nth-child(6) {
+  width: 40%; }
+
+.cage > *:nth-child(7) {
+  width: 40%; }
+
+.more-cage {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.more-cage > * {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top; }
+
+.more-cage > *:nth-child(1) {
+  width: 90%; }
+
+.more-cage > *:nth-child(2) {
+  width: 30%; }
+
+.more-cage > *:nth-child(3) {
+  width: 30%; }
+
+.more-cage > *:nth-child(4) {
+  width: 30%; }
+
+.cage * {
   padding-top: 1em;
   vertical-align: middle; }
 

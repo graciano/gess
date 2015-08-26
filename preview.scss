@@ -15,7 +15,7 @@ img{
 }
 
 h1{
-	font-size: 6em;
+	font-size: 5em;
 }
 
 header > h1, header >h2{
@@ -32,22 +32,14 @@ header{
 	text-align: center;
 	background-color: #E91E63;
 	color: #fff;
-	padding: 3em;
+	padding: 1em;
 	h2{
 		padding-bottom: 1em;
 		font-style: italic;
 	}
 }
 
-/*code{
-	white-space: pre;
-	word-break: normal;
-	word-wrap: normal;
-	font-size: small;
-}*/
-
 .row-preview{
-	/*background-color: #E91E63;*/
 	color: #212121;
 }
 
@@ -55,37 +47,43 @@ hr{
 	margin: 2em;
 }
 
+%code-commons{
+	font-size: 16px;
+	white-space: pre;
+	-moz-white-space: pre-wrap;
+}
+
 .tutorial{
-	padding: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 5em;
 	box-sizing: border-box;
 	background-color: #B6B6B6;
 	color: #fff;
 	font-size: 20px;
-	code{
-		font-size: 16px;
-		color:#212121;
-		white-space: pre-wrap;
-		-moz-white-space: pre-wrap;
-	}
 	.comment{
-		font-size: 16px;
 		color: #388E3C;
-		white-space: pre;
+		@extend %code-commons;
+	}
+	code{
+		@extend %code-commons;
+		color:#212121;
 	}
 }
 
 .cage{
+	h2{
+		font-size: 2em;
+	}
 	text-align: center;
+	background-color: #2196F3;
+	color: #fff;
 }
 
-@include row('.row-preview', (
-	'.tutorial' : 59%,
-	'.cage' : 40%
-	), true);
+@include row('.cage', (80%, 80%, 20%, 20%, 20%, 40%, 40%), false);
+@include row('.more-cage', (90%, 30%, 30%, 30%), false);
 
-@include row('.cage', (80%, 75%, 30%, 30%, 30%, 80%), false);
-
-.cage > *{
+.cage *{
 	padding-top: 1em;
 	vertical-align: middle;
 }
