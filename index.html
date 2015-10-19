@@ -17,9 +17,6 @@
     <header>
         <h1>Gess</h1>
         <h2>Grid Extremely Simple for Sass. That's it.</h2>
-
-        <h3>WARNING</h3>
-        <p>We have a little bug :(</p>
     </header>
     <div class="row-preview">
         <div class="tutorial">
@@ -40,20 +37,19 @@
             </code>
             <p class='comment'>
             /**
-            * Let's say you want to use your .row class to use as row and it's children will ocuppy half of
-            * it's width, you'll have to use 49% as the width, because yes, we have a bug.
+            * And use it like this:
             */</p>
             <code>
-            @include row('.row', 49%, false);
+            @include row('.row', 50%, false);
 
             <span class='comment'>//Or use a list of widths:</span>
-            @include row('.row', (20%, 25%, 100%, 200px), true);
+            @include row('.row', (25%, 25%, 100%, 200px), true);
 
             <span class='comment'>//Or a map with the keys as string selectors and values as widths.</span>
             @include row('.info', (
                   '.info-header': 100%,
-                  '.call-us': 49%,
-                  '.address': 49%
+                  '.call-us': 50%,
+                  '.address': 50%
               ), true);
             </code>
             <hr>
