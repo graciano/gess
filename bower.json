@@ -1,6 +1,6 @@
 {
   "name": "gess",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/graciano/gess",
   "authors": [
     "Matheus Graciano <graciano.dev@gmail.com>"
@@ -20,6 +20,11 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "bower.json",
+    ".gitignore",
+    "*.html",
+    "preview.scss",
+    "*.css"
   ]
 }

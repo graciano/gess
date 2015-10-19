@@ -5,11 +5,13 @@
     }
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   #{$selector} > * {
     display: inline-block;
     margin: 0;
     vertical-align: top;
+    box-sizing: border-box;
   }
   @if(type_of($width-childs)=='number'){
     #{$selector} > * { width: $width-childs; }
