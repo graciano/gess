@@ -1,38 +1,34 @@
-@mixin row($selector, $width-childs, $is-inside-other-row){
-  #{$selector}{
-    @if(not $is-inside-other-row){
-      width: 100%;
-    }
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #{$selector} > * {
+@mixin row($width-children){
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+
+  * {
     display: inline-block;
     margin: 0;
     vertical-align: top;
     box-sizing: border-box;
     border-size: 0;
   }
-  @if(type_of($width-childs)=='number'){
-    #{$selector} > * { width: $width-childs; }
+  @if(type_of($width-children)=='number'){
+    * { width: $width-children; }
   }
   @else{
-    @if(type_of($width-childs)=='list'){
-      $length: length($width-childs);
+    @if(type_of($width-children)=='list'){
+      $length: length($width-children);
       $i: 1;
-      @each $width in $width-childs{
-        #{$selector} > *:nth-child(#{$i}){
+      @each $width in $width-children{
+        *:nth-child(#{$i}){
           width: $width;
         }
         $i: $i + 1;
       }
     }
     @else{
-      @each $child, $width in $width-childs{
-        #{$selector} > #{$child}{ width: $width; }
+      @each $child, $width in $width-children{
+        #{$child}{ width: $width; }
       }
     }
   }
