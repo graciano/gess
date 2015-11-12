@@ -1,0 +1,3 @@
+@function first($l) { @return nth($l, 1);  }
+
+@function last($l) { @return nth($l, length($l)); }

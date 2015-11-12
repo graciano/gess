@@ -1,0 +1,9 @@
+@import "row";
+@import "media-queries";
+@mixin gess($width-children, $deviceIndex: null){
+  @if($deviceIndex == null){
+    @include row($width-children);
+  }@else{
+    @media #{media_query($deviceIndex)}{ @include row($width-children);  }
+  }
+}

@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  * {
+  & > * {
     display: inline-block;
     margin: 0;
     vertical-align: top;
@@ -13,14 +13,14 @@
     border-size: 0;
   }
   @if(type_of($width-children)=='number'){
-    * { width: $width-children; }
+    & > * { width: $width-children; }
   }
   @else{
     @if(type_of($width-children)=='list'){
       $length: length($width-children);
       $i: 1;
       @each $width in $width-children{
-        *:nth-child(#{$i}){
+        & > *:nth-child(#{$i}){
           width: $width;
         }
         $i: $i + 1;

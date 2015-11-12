@@ -10,7 +10,7 @@ Grid Extremely Simple for Sass. That's it.
 
 Include the row mixin with these arguments:
 
-`@include row('selector-of-row', <width, widhts, or yet a map explained bellow>, boolean for 100% with in the selector);`
+`@include gess(<width, widhts, or yet a map explained bellow>, [optional]<size of device, for responsiveness>);`
 
 ```Sass
 //You'll have to import it:
@@ -19,17 +19,17 @@ Include the row mixin with these arguments:
 /**
 * And use it like this
 */
-@include row('.row', 50%, false);
+@include gess(50%, 'small');
 
 //Or use a list of widths:
-@include row('.row', (20%, 25%, 100%, 200px), true);
+@include gess((20%, 25%, 100%, 200px));
 
 //Or a map with the keys as string selectors and values as widths.
-@include row('.info', (
+@include gess((
       '.info-header': 100%,
       '.call-us': 50%,
       '.address': 50%
-  ), true);
+  ), 'big');
   ```
 
 ## License
@@ -40,5 +40,6 @@ MIT license in the license file.
 
  - ~~Solve the 49% bug~~
  - ~~Make a demo here~~
+ - ~~Make it responsive~~
  - Maybe make it responsive
  - I don't think there is much more to do, since it is an **Extremely Simple** tool and I intend to keep it that way.

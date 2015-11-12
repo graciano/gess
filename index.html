@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Gess. A grid extremely simple for sass.">
     <title>Gess</title>
-    <link href="preview.css" rel="stylesheet"/>
+    <link href="sass-preview/preview.css" rel="stylesheet"/>
 <body>
     <header>
         <h1>Gess</h1>
@@ -23,15 +23,15 @@
             <h2>Install</h2>
             <ul>
                 <li>With <a href="http://bower.io/" title="Front-end dependency manager">bower</a>:<code> $ bower install gess</code>
-                <li>Or just copy/paste the <code>_gess.scss</code> file in any folder of your project.
+                <li>Or download the code and copy/paste the content of the <code>src/</code> folder in any folder of your project.
             </ul>
             <hr>
             <h2>Usage</h2>
 
-            <p>Include the row mixin with these arguments:</p>
+            <p>Include the gess mixin with these arguments:</p>
 
             <code>
-            @include row('selector-of-row', &#x3C;width, widhts, or yet a map explained bellow&#x3E;, boolean for 100% with in the selector);
+            @include row('selector-of-row', &#x3C;width, widhts, or yet a map explained bellow&#x3E;, &#x3C;size of device, for responsiveness&#x3E;);
             <span class='comment'>//You'll have to import it:</span>
             @import "path/to/gess";
             </code>
@@ -40,17 +40,31 @@
             * And use it like this:
             */</p>
             <code>
-            @include row('.row', 50%, false);
+            @include gess(50%, 'big');
+            @include gess(100%, 'small');
 
             <span class='comment'>//Or use a list of widths:</span>
-            @include row('.row', (25%, 25%, 100%, 200px), true);
+            @include row((25%, 25%, 100%, 200px));
 
             <span class='comment'>//Or a map with the keys as string selectors and values as widths.</span>
-            @include row('.info', (
+            @include row((
                   '.info-header': 100%,
                   '.call-us': 50%,
                   '.address': 50%
-              ), true);
+              ), 'biggest');
+            </code>
+            <hr>
+            <h2>Customization</h2>
+
+            <p>You can customize the breakpoints (and/or names of devices) after you import gess:</p>
+
+            <code>
+                $breakpoints: (320px, 600px, 1200px, 1900px);
+                //and then:
+                $devices: (
+                'phone'     : brk($breakpoints, 1),
+                'tablet'    : brk($breakpoints, 2),
+                );
             </code>
             <hr>
             <h2>Some info</h2>
@@ -64,15 +78,15 @@
             <h2>Live preview</h2>
             <p>This is a beautiful paragraph with no aparent utility.</p>
             <div class="more-cage">
-                <img src="http://www.placecage.com/c/600/600" alt="Nicolas Cage"/>
-                <img src="http://www.placecage.com/500/500" alt="Nicolas Cage"/>
-                <img src="http://www.placecage.com/300/300" alt="Nicolas Cage"/>
+                <img src="http://placebear.com/g/500/500" alt="Bear"/>
+                <img src="http://placebear.com/500/500" alt="Bear"/>
+                <img src="http://placebear.com/300/300" alt="Bear"/>
             </div>
-            <img src="http://www.placecage.com/601/601" alt="Nicolas Cage">
-            <img src="http://www.placecage.com/c/600/600" alt="Nicolas Cage"/>
+            <img src="http://placebear.com/200/200" alt="Bear">
+            <img src="http://placebear.com/g/200/200" alt="Bear"/>
             <span>Look at these fine placeholders in the documentation</span>
-            <img src="http://www.placecage.com/600/600" alt="Nicolas Cage"/>
-            <img src="http://www.placecage.com/700/700" alt="Nicolas Cage"/>
+            <img src="http://placebear.com/301/301" alt="Bear"/>
+            <img src="http://placebear.com/400/400" alt="Bear"/>
         </section>
     </div>
 </body>

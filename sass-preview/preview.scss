@@ -1,9 +1,9 @@
-@import "gess";
+@import "../src/gess";
 
 *{
-	margin: 0;
-	padding: 0;
-	font-family: Arial;
+    padding: 0;
+    margin: 0;
+	font-family: Arial, sans-serif;
 }
 li{
 	list-style: none;
@@ -50,12 +50,12 @@ header{
 hr{
 	margin-top: 2em;
 	margin-bottom: 2em;
-	width: 100%;
+	width: 80%;
 }
 
 %code-commons{
 	font-size: 16px;
-	white-space: pre;
+	white-space: pre-wrap;
 	-moz-white-space: pre-wrap;
 }
 
@@ -88,9 +88,14 @@ hr{
 .some-info{
 	padding-top: 1em;
 }
-
-@include row('.cage', (100%, 100%, 100%, 20%, 20%, 20%, 20%, 20%), false);
-@include row('.more-cage', 33%, false);
+.cage{
+  @include row((100%, 100%, 100%, 20%, 20%, 20%, 20%, 20%));
+}
+.more-cage{
+  @include gess(33%, 'big');
+  @include gess(50%, 'medium');
+  @include gess(50%, 'small');
+}
 
 .cage *{
 	padding-top: 1em;
