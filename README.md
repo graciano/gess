@@ -1,6 +1,8 @@
 # Gess
 Grid Extremely Simple for Sass. That's it.
 
+[![Bower version](https://badge.fury.io/bo/gess.svg)](https://badge.fury.io/bo/gess)
+
 ## Install
 
  - With [Bower](http://bower.io/ "Font-end dependency manager"): `$ bower install graciano/gess`
