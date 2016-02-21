@@ -4,13 +4,19 @@ $devices: (
     'big'    : (768px),
 );
 
-@function media_query($deviceIndex){
+@function media_query($deviceIndex, $useDeviceWidthInsteadOfScreen: false){
     $found-breakpoints: map-get($devices, $deviceIndex);
     @if($found-breakpoints==null){
       @error "Device '"+$deviceIndex+"' not found.";
     }
     @if(length($found-breakpoints)==1){
+      @if(not $useDeviceWidthInsteadOfScreen){
+        @return "(min-width: #{$found-breakpoints})";
+      }
       @return "(min-device-width: #{$found-breakpoints})";
+    }
+    @if(not $useDeviceWidthInsteadOfScreen){
+      @return "(min-width: #{nth($found-breakpoints, 1)}) and (max-width: #{nth($found-breakpoints, 2)})";
     }
     @return "(min-device-width: #{nth($found-breakpoints, 1)}) and (max-device-width: #{nth($found-breakpoints, 2)})";
 }
