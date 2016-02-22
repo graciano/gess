@@ -1,13 +1,16 @@
 # Gess
 Grid Extremely Simple for Sass. That's it. Preview with [github pages](http://graciano.github.io/gess/)
 
-[![Bower version](https://badge.fury.io/bo/gess.svg)](https://badge.fury.io/bo/gess)
-[![GitHub version](https://badge.fury.io/gh/graciano%2Fgess.svg)](https://badge.fury.io/gh/graciano%2Fgess)
+[![GitHub license](https://img.shields.io/github/license/graciano/gess.svg)](https://github.com/graciano/gess/blob/master/LICENSE)
+[![Bower](https://img.shields.io/bower/v/gess.svg)](http://graciano.github.io/gess/)
+[![Other Badge](https://img.shields.io/badge/much badge-many fun-yellow.svg)](http://graciano.github.io/gess/)
+[![GitHub release](https://img.shields.io/github/release/graciano/gess.svg)](https://github.com/graciano/gess)
+
 
 ## Install
 
- - With [Bower](http://bower.io/ "Font-end dependency manager"): `$ bower install graciano/gess`
- - Or just copy/paste the `_gess.scss` file in any folder of your project.
+ - With [Bower](http://bower.io/ "Font-end dependency manager"): `$ bower install gess`
+ - Or [download](https://github.com/graciano/gess/archive/master.zip)
 
 ## Usage
 
@@ -64,5 +67,4 @@ MIT license in the license file.
  - ~~Solve the 49% bug~~
  - ~~Make a demo here~~
  - ~~Make it responsive~~
- - Maybe make it responsive
  - I don't think there is much more to do, since it is an **Extremely Simple** tool and I intend to keep it that way.
