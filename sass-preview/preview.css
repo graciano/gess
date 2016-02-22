@@ -44,7 +44,8 @@ hr {
   .tutorial ul {
     margin-left: 2em; }
   .tutorial code.hljs {
-    display: inline; }
+    display: inline;
+    line-height: 2.5em; }
   .tutorial .hljs {
     border-radius: 3px;
     max-width: 80%; }
