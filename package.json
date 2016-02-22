@@ -1,6 +1,6 @@
 {
   "name": "gess",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "grid extremely simple for sass",
   "main": "index.js",
   "scripts": {
