@@ -83,12 +83,15 @@ $seletors-not-header: "";
 	padding-top: 1em;
 }
 .bears{
-  @include row((100%, 100%, 100%, 20%, 20%, 20%, 20%, 20%));
+  @include gess((100%, 100%, 100%, 20%, 20%, 20%, 20%, 20%), 'big');
+  @include gess((100%, 100%, 100%, 50%, 50%, 50%, 50%, 50%), 'medium');
+  @include gess(100%, 'small');
 }
+
 .more-bears{
   @include gess(33%, 'big');
   @include gess(50%, 'medium');
-  @include gess(50%, 'small');
+  @include gess(100%, 'small');
 }
 
 .bears *{
