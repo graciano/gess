@@ -1,5 +1,5 @@
 # Gess
-Grid Extremely Simple for Sass. That's it.
+Grid Extremely Simple for Sass. That's it. Preview with [github pages](http://graciano.github.io/gess/)
 
 [![Bower version](https://badge.fury.io/bo/gess.svg)](https://badge.fury.io/bo/gess)
 [![GitHub version](https://badge.fury.io/gh/graciano%2Fgess.svg)](https://badge.fury.io/gh/graciano%2Fgess)
@@ -34,6 +34,26 @@ Include the row mixin with these arguments:
       '.address': 50%
   ), 'big');
   ```
+
+### Customization & Hacks
+You can change the device map and it's breakpoints
+```Sass
+$devices: (
+    //the first one SHOULD have the value 0 at it's first value
+    'small': (0, 480px), 
+    'medium': (480px, 1000px),
+    'big': (1000px)
+    //the last one SHOULD have only one value, but still a list of one value
+);
+```
+You can also use the media_query function for other purposes besides grid
+```sass
+.some-nice-class{
+    @media #{media_query('big')}{
+      padding-top: 3em; // some random css
+    }
+  }
+```
 
 ## License
 
