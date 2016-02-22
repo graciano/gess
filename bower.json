@@ -21,6 +21,8 @@
     "bower_components",
     "test",
     "tests",
+    "gulpfile.js",
+    "js",
     "bower.json",
     ".gitignore",
     "*.html",

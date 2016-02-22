@@ -2,6 +2,7 @@
 Grid Extremely Simple for Sass. That's it.
 
 [![Bower version](https://badge.fury.io/bo/gess.svg)](https://badge.fury.io/bo/gess)
+[![GitHub version](https://badge.fury.io/gh/graciano%2Fgess.svg)](https://badge.fury.io/gh/graciano%2Fgess)
 
 ## Install
 

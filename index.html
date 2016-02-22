@@ -14,70 +14,14 @@
     <title>Gess</title>
     <link href="sass-preview/preview.css" rel="stylesheet"/>
 <body>
-    <header>
-        <h1>Gess</h1>
-        <h2>Grid Extremely Simple for Sass. That's it.</h2>
-    </header>
     <div class="row-preview">
-        <div class="tutorial">
-            <h2>Install</h2>
-            <ul>
-                <li>With <a href="http://bower.io/" title="Front-end dependency manager">bower</a>:<code> $ bower install gess</code>
-                <li>Or download the code and copy/paste the content of the <code>src/</code> folder in any folder of your project.
-            </ul>
-            <hr>
-            <h2>Usage</h2>
-
-            <p>Include the gess mixin with these arguments:</p>
-
-            <code>
-            @include row('selector-of-row', &#x3C;width, widhts, or yet a map explained bellow&#x3E;, &#x3C;size of device, for responsiveness&#x3E;);
-            <span class='comment'>//You'll have to import it:</span>
-            @import "path/to/gess";
-            </code>
-            <p class='comment'>
-            /**
-            * And use it like this:
-            */</p>
-            <code>
-            @include gess(50%, 'big');
-            @include gess(100%, 'small');
-
-            <span class='comment'>//Or use a list of widths:</span>
-            @include row((25%, 25%, 100%, 200px));
-
-            <span class='comment'>//Or a map with the keys as string selectors and values as widths.</span>
-            @include row((
-                  '.info-header': 100%,
-                  '.call-us': 50%,
-                  '.address': 50%
-              ), 'biggest');
-            </code>
-            <hr>
-            <h2>Customization</h2>
-
-            <p>You can customize the breakpoints (and/or names of devices) after you import gess:</p>
-
-            <code>
-                $breakpoints: (320px, 600px, 1200px, 1900px);
-                //and then:
-                $devices: (
-                'phone'     : brk($breakpoints, 1),
-                'tablet'    : brk($breakpoints, 2),
-                );
-            </code>
-            <hr>
-            <h2>Some info</h2>
-            <ul class='some-info'>
-                <li>Check the project at the <a href="https://github.com/graciano/gess">github page</a>.
-                <li>E-mail the <a href="mailto:graciano.dev@gmail.com">author</a>.
-                <li>Use it ;)
-            </ul>
+        <div id="readme" class="tutorial">
+            
         </div>
-        <section class="cage">
+        <section class="bears">
             <h2>Live preview</h2>
             <p>This is a beautiful paragraph with no aparent utility.</p>
-            <div class="more-cage">
+            <div class="more-bears">
                 <img src="http://placebear.com/g/500/500" alt="Bear"/>
                 <img src="http://placebear.com/500/500" alt="Bear"/>
                 <img src="http://placebear.com/300/300" alt="Bear"/>
@@ -89,5 +33,6 @@
             <img src="http://placebear.com/400/400" alt="Bear"/>
         </section>
     </div>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
