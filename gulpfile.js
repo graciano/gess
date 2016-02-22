@@ -16,16 +16,20 @@ paths.scripts = {
 };
 paths.styles = {
     buildPath: paths.buildPath+"sass-preview",
-    srcFiles: './sass-preview/**/*.scss',
+    srcFiles: ['./sass-preview/**/*.scss', 'node_modules/highlight.js/styles/github.css'],
     destFile: "preview.css"
 };
+
+function showTime(){//hu3
+    return (new Date()).toTimeString().substr(0, 8);
+}
 
 gulp.task('scripts', function() {
     return gulp.src(paths.scripts.srcFiles)
         .pipe(concat(paths.scripts.destFile))
         .pipe(browserify())
         .pipe(gulp.dest(paths.scripts.buildPath))
-        .pipe(notify({message: 'scripts merged o/'}));
+        .pipe(notify({message: 'scripts merged o/\nat '+showTime()}));
 });
 
 gulp.task('styles', ['clear-css'], function(){
@@ -33,12 +37,12 @@ gulp.task('styles', ['clear-css'], function(){
         .pipe(sass({errLogToConsole: true}))
         .pipe(concat(paths.styles.destFile))
         .pipe(gulp.dest(paths.styles.buildPath))
-        .pipe(notify({message: 'sass compiled o/'}));
+        .pipe(notify({message: 'sass compiled o/\nat '+showTime()}));
 });
 
 gulp.task('watch', function(){
     gulp.watch('./**/*.scss', ['styles']);
-    gulp.watch('./js/**/*.js', ['scripts']);
+    gulp.watch(paths.scripts.srcFiles, ['scripts']);
 });
 
 gulp.task('clear-css', function() {

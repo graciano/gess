@@ -3,7 +3,7 @@
 *{
     padding: 0;
     margin: 0;
-	font-family: Arial, sans-serif;
+	font-family: Impact, Charcoal, sans-serif;
 }
 
 @each $i in (1,2,3){
@@ -25,45 +25,46 @@ h1, h2{
 	text-shadow: 0 2px 2px #727272;
 }
 
-.row-preview{
-	color: #212121;
-}
-
 hr{
 	margin-top: 2em;
 	margin-bottom: 2em;
 	width: 80%;
 }
 
-%code-commons{
-	font-size: 16px;
-	white-space: pre-wrap;
-	-moz-white-space: pre-wrap;
+$seletors-not-header: "";
+@each $i in (1,2,3,4,5,6) {
+	$seletors-not-header: $seletors-not-header+":not(h#{$i})";
 }
 
+.tutorial > *#{$seletors-not-header}{
+	padding-left: 2em;
+}
+
+.tutorial > *:not(code):not(pre)#{$seletors-not-header}, .tutorial li{
+	padding-bottom: 1em;
+}
 .tutorial{
-	padding-top: 2em;
+	ul{
+		margin-left: 2em;
+	}
 	padding-bottom: 2em;
-	padding-left: 5em;
+	padding-left: 1em;
 	box-sizing: border-box;
 	background-color: #B6B6B6;
-	color: #fff;
-	font-size: 20px;
-	.comment{
-		color: #388E3C;
-		@extend %code-commons;
+	color: #212121;
+	code.hljs {
+		display: inline;
 	}
-	code{
-		@extend %code-commons;
-		color:#212121;
+	.hljs{
+		border-radius: 3px;
+		max-width: 80%;
 	}
 }
 
 .bears{
-	@each $i in (1,2,3){
-		h#{$i}{
-			text-align: center;
-		}
+
+	h1, h2, h3{
+		text-align: center;
 	}
 	h2{
 		font-size: 2em;

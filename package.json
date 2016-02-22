@@ -18,12 +18,13 @@
   "homepage": "https://github.com/graciano/gess#readme",
   "devDependencies": {
     "bower": "^1.7.7",
-    "commonmark": "^0.24.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
     "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^2.2.0",
+    "highlight.js": "^9.1.0",
+    "markdown-it": "^6.0.0"
   }
 }
