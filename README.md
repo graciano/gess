@@ -2,9 +2,9 @@
 Grid Extremely Simple for Sass. That's it. Preview with [github pages](http://graciano.github.io/gess/)
 
 [![GitHub license](https://img.shields.io/github/license/graciano/gess.svg)](https://github.com/graciano/gess/blob/master/LICENSE)
-[![Bower](https://img.shields.io/bower/v/gess.svg)](http://graciano.github.io/gess/)
-[![Other Badge](https://img.shields.io/badge/much badge-many fun-yellow.svg)](http://graciano.github.io/gess/)
-[![GitHub release](https://img.shields.io/github/release/graciano/gess.svg)](https://github.com/graciano/gess)
+[![Bower](https://img.shields.io/bower/v/gess.svg)](https://graciano.github.io/gess/)
+[![Other Badge](https://img.shields.io/badge/much%20badge-many%20fun-yellow.svg)](https://graciano.github.io/gess/)
+[![GitHub release](https://img.shields.io/github/release/graciano/gess.svg)](https://github.com/graciano/gess/releases)
 
 
 ## Install
@@ -42,20 +42,26 @@ Include the row mixin with these arguments:
 You can change the device map and it's breakpoints
 ```Sass
 $devices: (
-    //the first one SHOULD have the value 0 at it's first value
+    //the first entry SHOULD have the value 0 at it's first element
     'small': (0, 480px), 
     'medium': (480px, 1000px),
     'big': (1000px)
-    //the last one SHOULD have only one value, but still a list of one value
+    //the last one SHOULD have only one element, but still a list
 );
 ```
-You can also use the media_query function for other purposes besides grid
+You can also use the `media_query` function for other purposes besides grid
 ```sass
 .some-nice-class{
     @media #{media_query('big')}{
       padding-top: 3em; // some random css
     }
   }
+```
+In the `media_query` function you can set the optional second argument to `true` to use `min-device-width` instead of `min-width` as well with the max values.
+```sass
+    @media #{media_query('big', true)}{
+      // some other css
+    }
 ```
 
 ## License
