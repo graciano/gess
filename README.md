@@ -1,5 +1,5 @@
 # Gess
-Grid Extremely Simple for Sass. That's it. Preview with [github pages](http://graciano.github.io/gess/)
+Grid Extremely Simple for Sass based on flex-box. That's it. Preview with [github pages](http://graciano.github.io/gess/)
 
 [![GitHub license](https://img.shields.io/github/license/graciano/gess.svg)](https://github.com/graciano/gess/blob/master/LICENSE)
 [![Bower](https://img.shields.io/bower/v/gess.svg)](https://graciano.github.io/gess/)
@@ -14,13 +14,13 @@ Grid Extremely Simple for Sass. That's it. Preview with [github pages](http://gr
 
 ## Usage
 
-Include the row mixin with these arguments:
+Include the `gess` mixin with these arguments:
 
 `@include gess(<width, widhts, or yet a map explained bellow>, [optional]<size of device, for responsiveness>);`
 
 ```Sass
 //You'll have to import it:
-@import "path/to/gess";
+@import "bower_components/gess/src/gess";
 
 /**
 * And use it like this
@@ -74,3 +74,4 @@ MIT license in the license file.
  - ~~Make a demo here~~
  - ~~Make it responsive~~
  - I don't think there is much more to do, since it is an **Extremely Simple** tool and I intend to keep it that way.
+ - Now it's on v1.0.0 o/

@@ -1,17 +1,19 @@
 {
   "name": "gess",
-  "version": "0.4.2",
-  "homepage": "https://github.com/graciano/gess",
+  "version": "1.0.0",
+  "homepage": "http://graciano.github.io/gess/",
   "authors": [
     "Matheus Graciano <graciano.dev@gmail.com>"
   ],
   "description": "Grid Extremely Simple for Sass.",
-  "main": "_gess.scss",
+  "main": "src/_gess.scss",
   "keywords": [
     "sass",
     "scss",
     "gess",
     "grid",
+    "flex",
+    "flex-box",
     "graciano"
   ],
   "license": "MIT",
