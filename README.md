@@ -41,7 +41,7 @@ Include the row mixin with these arguments:
 ### Customization & Hacks
 You can change the device map and it's breakpoints
 ```Sass
-$devices: (
+$gess_devices_map: (
     //the first entry SHOULD have the value 0 at it's first element
     'small': (0, 480px), 
     'medium': (480px, 1000px),

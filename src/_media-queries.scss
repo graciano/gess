@@ -1,11 +1,11 @@
-$devices: (
+$gess_devices_map: (
     'small'  : (0, 480px),
     'medium'    : (480px, 768px),
     'big'    : (768px),
 );
 
 @function media_query($deviceIndex, $useDeviceWidthInsteadOfScreen: false){
-    $found-breakpoints: map-get($devices, $deviceIndex);
+    $found-breakpoints: map-get($gess_devices_map, $deviceIndex);
     @if($found-breakpoints==null){
       @error "Device '"+$deviceIndex+"' not found.";
     }
