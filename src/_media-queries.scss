@@ -5,6 +5,9 @@ $gess_devices_map: (
 );
 
 @function media_query($deviceIndex, $useDeviceWidthInsteadOfScreen: false){
+    @if($useDeviceWidthInsteadOfScreen){
+        @warn "Deprecated usage of argument '$useDeviceWidthInsteadOfScreen'. You can still use it ignoring this warning.";
+    }
     $found-breakpoints: map-get($gess_devices_map, $deviceIndex);
     @if($found-breakpoints==null){
       @error "Device '"+$deviceIndex+"' not found.";
