@@ -57,7 +57,9 @@ You can also use the `media_query` function for other purposes besides grid
     }
   }
 ```
-In the `media_query` function you can set the optional second argument to `true` to use `min-device-width` instead of `min-width` as well with the max values.
+**Deprecation Warning**
+In version 1.1, the second argument of `media_query()` function, the boolean `$useDeviceWidthInsteadOfScreen` is not recomended anymore.
+You can still set the optional second argument to `true` to use `min-device-width` instead of `min-width` as well with the max values, but a warning will be displayed.
 ```sass
     @media #{media_query('big', true)}{
       // some other css
