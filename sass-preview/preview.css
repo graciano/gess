@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Impact, Charcoal, sans-serif; }
+  font-family: Courier, monospace; }
 
 h1 {
   padding-bottom: 10px;
@@ -30,7 +30,7 @@ hr {
   width: 80%; }
 
 .tutorial > *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  padding-left: 2em; }
+  padding: 2em; }
 
 .tutorial > *:not(code):not(pre):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6), .tutorial li {
   padding-bottom: 1em; }
@@ -51,9 +51,9 @@ hr {
     max-width: 80%; }
 
 .bears {
-  text-align: center;
   background-color: #2196F3;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
   .bears h1, .bears h2, .bears h3 {
     text-align: center; }
   .bears h2 {

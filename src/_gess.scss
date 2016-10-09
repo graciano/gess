@@ -1,9 +1,13 @@
-@import "row";
+@import "gess_row";
 @import "media-queries";
 @mixin gess($width-children, $deviceIndex: null){
   @if($deviceIndex == null){
-    @include row($width-children);
+    @include gess_row($width-children);
   }@else{
-    @media #{media_query($deviceIndex)}{ @include row($width-children);  }
+    @media #{media_query($deviceIndex)}{ @include gess_row($width-children);  }
   }
+}
+
+@function gess_device_size($deviceIndex){
+	@return nth(map-get($gess_devices_map, $deviceIndex),2);
 }

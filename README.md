@@ -38,6 +38,9 @@ Include the `gess` mixin with these arguments:
   ), 'big');
   ```
 
+### New feature
+  Since version 1.2.0, you can use the function `gess_device_size('medium')` or any other device index and it will return the size of it. It's just a sugar syntax for `nth(map-get($gess_devices_map, $deviceIndex),2)` but it's pretty useful.
+
 ### Customization & Hacks
 You can change the device map and it's breakpoints
 ```Sass
